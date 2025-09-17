@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { categories } from "@/lib/catalog";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
@@ -12,14 +12,14 @@ export default function Home() {
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-emerald-400 to-lime-500 text-white grid place-items-center font-bold text-lg shadow-lg">
+            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-orange-500 to-emerald-500 text-white grid place-items-center font-bold text-lg shadow-lg">
               O
             </div>
-            <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-white via-emerald-400 to-emerald-700 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-orange-500 via-amber-300 to-emerald-600 bg-clip-text text-transparent">
               ORIGINIK
             </span>
           </div>
-          <Badge variant="secondary">Since 2025</Badge>
+          <ThemeToggle />
         </div>
       </header>
       <main className="mx-auto max-w-6xl px-6 py-10">
