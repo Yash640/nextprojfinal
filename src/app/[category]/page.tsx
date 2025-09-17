@@ -35,13 +35,13 @@ export default async function CategoryPage({ params }: Props) {
             <div className="pointer-events-none absolute -inset-1 rounded-xl opacity-0 group-hover:opacity-100 blur-2xl transition duration-500 bg-gradient-to-r from-emerald-500/40 via-green-500/30 to-teal-500/40"></div>
             <Link href={`/${cat.slug}/${sp.slug}`} className="relative block">
               <Card className="overflow-hidden transition-all duration-300 border border-transparent hover:border-emerald-500/50 hover:shadow-[0_0_0_6px_rgba(16,185,129,0.25)]">
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <div className="relative aspect-[4/3] w-[calc(100%-1.5rem)] overflow-hidden rounded-xl border bg-muted m-3">
                 <Image
                   src={sp.image}
                   alt={sp.name}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
