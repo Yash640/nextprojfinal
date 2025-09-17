@@ -39,7 +39,7 @@ export default async function SubproductPage({ params }: Props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {sp.variants.map((v) => (
           <Link key={v.slug} href={`/${cat.slug}/${sp.slug}/${v.slug}`}>
-            <Card className="group overflow-hidden hover:shadow-lg transition-shadow">
+            <Card className="group overflow-hidden transition-all duration-300 border border-transparent hover:border-orange-500/40 hover:shadow-[0_0_0_4px_rgba(234,88,12,0.15)]">
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src={v.image}
