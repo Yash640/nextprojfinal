@@ -35,7 +35,7 @@ export const categories: Category[] = [
   {
     slug: "dry-fruits",
     name: "Dry Fruits",
-    image: placeholder,
+    image: "/Images/categories/dry-fruits.jpg",
     subproducts: [
       { slug: "almonds", name: "Almonds", image: placeholder, variants: buildVariants("Almond") },
       { slug: "cashews", name: "Cashews", image: placeholder, variants: buildVariants("Cashew") },
@@ -46,7 +46,7 @@ export const categories: Category[] = [
   {
     slug: "millets",
     name: "Millets",
-    image: placeholder,
+    image: "/Images/categories/millets.jpg",
     subproducts: ["A", "B", "C", "D", "E", "F"].map((n) => ({
       slug: n.toLowerCase(),
       name: `Millet ${n}`,
@@ -57,7 +57,7 @@ export const categories: Category[] = [
   {
     slug: "raw-masale",
     name: "Raw Masale",
-    image: placeholder,
+    image: "/Images/categories/raw-masale.jpg",
     subproducts: ["A", "B", "C", "D", "E", "F"].map((n) => ({
       slug: n.toLowerCase(),
       name: `Raw Masala ${n}`,
@@ -68,7 +68,7 @@ export const categories: Category[] = [
   {
     slug: "homemade-masale",
     name: "Homemade Masale",
-    image: placeholder,
+    image: "/Images/categories/homemade-masale.jpg",
     subproducts: ["A", "B", "C", "D", "E", "F"].map((n) => ({
       slug: n.toLowerCase(),
       name: `Homemade Masala ${n}`,
@@ -79,7 +79,7 @@ export const categories: Category[] = [
   {
     slug: "healthy-snacks",
     name: "Healthy Snacks",
-    image: placeholder,
+    image: "/Images/categories/healthy-snacks.jpg",
     subproducts: ["A", "B", "C", "D", "E", "F"].map((n) => ({
       slug: n.toLowerCase(),
       name: `Snack ${n}`,
@@ -90,7 +90,7 @@ export const categories: Category[] = [
   {
     slug: "pickles",
     name: "Pickles",
-    image: placeholder,
+    image: "/Images/categories/pickles.jpg",
     subproducts: ["A", "B", "C", "D", "E", "F"].map((n) => ({
       slug: n.toLowerCase(),
       name: `Pickle ${n}`,
