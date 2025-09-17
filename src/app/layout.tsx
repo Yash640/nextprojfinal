@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[radial-gradient(ellipse_100%_60%_at_50%_-10%,rgba(16,185,129,0.12),transparent),radial-gradient(ellipse_80%_40%_at_10%_20%,rgba(34,197,94,0.08),transparent),radial-gradient(ellipse_80%_40%_at_90%_30%,rgba(6,182,212,0.08),transparent)]`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>

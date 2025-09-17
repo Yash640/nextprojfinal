@@ -38,8 +38,10 @@ export default async function SubproductPage({ params }: Props) {
       <h1 className="text-2xl font-bold tracking-tight mt-4 mb-6">{sp.name}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {sp.variants.map((v) => (
-          <Link key={v.slug} href={`/${cat.slug}/${sp.slug}/${v.slug}`}>
-            <Card className="group overflow-hidden transition-all duration-300 border border-transparent hover:border-orange-500/40 hover:shadow-[0_0_0_4px_rgba(234,88,12,0.15)]">
+          <div key={v.slug} className="group relative">
+            <div className="pointer-events-none absolute -inset-1 rounded-xl opacity-0 group-hover:opacity-100 blur-2xl transition duration-500 bg-gradient-to-r from-emerald-500/40 via-green-500/30 to-teal-500/40"></div>
+            <Link href={`/${cat.slug}/${sp.slug}/${v.slug}`} className="relative block">
+              <Card className="overflow-hidden transition-all duration-300 border border-transparent hover:border-emerald-500/50 hover:shadow-[0_0_0_6px_rgba(16,185,129,0.25)]">
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src={v.image}
@@ -53,8 +55,9 @@ export default async function SubproductPage({ params }: Props) {
                 <h3 className="text-lg font-semibold">{v.name}</h3>
                 <p className="text-sm text-muted-foreground">View details →</p>
               </div>
-            </Card>
-          </Link>
+              </Card>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
